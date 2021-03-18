@@ -7,7 +7,8 @@
     "start": "next start",
     "lint": "eslint src",
     "format": "prettier --loglevel=silent --write 'src/**/*.{js,jsx,ts,tsx,json}' && eslint src --fix src",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "test": "jest"
   },
   "dependencies": {
     "@sentry/react": "^6.2.1",
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "@sentry/webpack-plugin": "^1.14.1",
+    "@types/jest": "^26.0.21",
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
@@ -28,7 +30,9 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "jest": "^26.6.3",
     "prettier": "^2.2.1",
+    "ts-jest": "^26.5.4",
     "typescript": "4.0"
   },
   "license": "MIT"
