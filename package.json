@@ -5,6 +5,8 @@
     "dev": "next --port=3002",
     "build": "next build && next export",
     "start": "next start",
+    "lint": "eslint src",
+    "format": "prettier --loglevel=silent --write 'src/**/*.{js,jsx,ts,tsx,json}' && eslint src --fix src",
     "type-check": "tsc"
   },
   "dependencies": {
@@ -19,6 +21,14 @@
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "prettier": "^2.2.1",
     "typescript": "4.0"
   },
   "license": "MIT"
