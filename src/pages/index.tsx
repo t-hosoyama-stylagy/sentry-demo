@@ -1,15 +1,15 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
-import { captureException } from '@sentry/react'
+import { captureException } from "@sentry/react"
+import Link from "next/link"
+
+import Layout from "../components/Layout"
 
 const IndexPage = () => {
-
   const handleError = () => {
     try {
-      throw new Error("test");
-    } catch(e) {
-      const eventId = captureException(e);
-      console.log(eventId);
+      throw new Error("test")
+    } catch (e) {
+      const eventId = captureException(e)
+      console.log(eventId)
     }
   }
 
@@ -22,7 +22,9 @@ const IndexPage = () => {
         </Link>
       </p>
       <p>
-        <a id="error" onClick={handleError}>Error</a>
+        <a id="error" onClick={handleError}>
+          Error
+        </a>
       </p>
     </Layout>
   )
