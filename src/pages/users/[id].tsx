@@ -1,4 +1,5 @@
-import { GetStaticPaths,GetStaticProps } from "next"
+import { GetStaticPaths, GetStaticProps } from "next"
+import React from "react"
 
 import Layout from "../../components/Layout"
 import ListDetail from "../../components/ListDetail"

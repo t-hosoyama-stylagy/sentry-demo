@@ -2,6 +2,7 @@ import * as Sentry from "@sentry/react"
 import { Integrations } from "@sentry/tracing"
 import { AppProps } from "next/app"
 import Head from "next/head"
+import React from "react"
 
 Sentry.init({
   dsn: "https://9fe3bf75f01941dfb798555d79c4995e@o540928.ingest.sentry.io/5659087",
